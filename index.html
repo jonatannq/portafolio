@@ -4,47 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Portafolio | Full-Stack Jr</title>
+    <link rel="preload" href="css/css.css" as="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    Jonatan Yair Aguilar Mendez
-    Full-Stack Web Jr
-    Contacto
-    yairaguilarmendez@gmail.com
-    github.com/jonatannq
-    4774324432
-    León, Guanajuato, México
-    Sobre mi
-    Estudiante de Desarrollo de Software en la UVEG 
-                        con formación técnica previa en programación. 
-                        Apasionado por la tecnología y enfocado en consolidar 
-                        mis bases en desarrollo web full-stack. Me caracterizo 
-                        por mi disciplina para aprender nuevas tecnologías de 
-                        forma autónoma, construir proyectos prácticos y 
-                        comprender el ciclo de vida del desarrollo de software.
-    Formación
-    Universidad Virtual del Estado de Guanajuato (UVEG)
-    Ingeniería en Desarrollo de Software | Jul 2025 – Actualidad
-    Enfocado en la administración de proyectos y desarrollo frontend/backend.
     
-    CETis 77
-    Técnico en Programación | Sept 2017 – Jun 2020
-    Fundamentos de lógica, desarrollo de aplicaciones Android básicas, bases de datos y maquetación web.
-    Habilidades
-    Frontend
-    React.js
-    Html y CSS
-    Backend & Base de Datos
-    Node.js
-    JavaScript
-    MySQL / SQL
-    API REST
-    Despliegue & Herramientas
-    Railway
-    Git/GitHub
+    <main class="main__display">
+        <!-- Profile Card -->
+        <div class="profile__card">
 
-     
-    Idiomas
-    Ingles A2
-             
+            <section class="profile__section">
+                <div class="profile__display">
+                    <img class="profile__img" src="src/img/img.png" alt="img cv">
+                    <h1>Jonatan Yair Aguilar Mendez</h1>
+                </div>
+                
+                <p>Full-Stack Web Jr</p>
+            </section>
+            
+            <section class="contact__section">
+                <h2>Contacto</h2>
+
+                <div class="contact__div">
+                    <img class="contact__icon" src="src/img/gmail.png" alt="icono gmail">
+                    <p class="contact__text--show">yairaguilarmendez@gmail.com</p>
+                </div>
+
+                <div class="contact__div">
+                    <img class="contact__icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="icono github">
+                    <p class="contact__text--show">github.com/jonatannq</p>
+                </div>
+                
+                <div class="contact__div">
+                    <img class="contact__icon" src="src/img/llamada-telefonica.png" alt="icono gmail">
+                    <p class="contact__text--show">4774324432</p>
+                </div>
+
+                <div class="contact__div">
+                    <img class="contact__icon" src="src/img/mapas-y-banderas.png" alt="icono gmail">
+                    <p>León, Guanajuato <span class="contact__text--show">, México</span></p>
+                </div>
+                
+            </section>
+        </div>
+
+
+        <!-- Contenido -->
+        <div class="profile__content">
+            <section>
+                <h3>Sobre mi</h3>
+                <p>
+                    Estudiante de Desarrollo de Software en la UVEG 
+                    con formación técnica previa en programación. 
+                    Apasionado por la tecnología y enfocado en consolidar 
+                    mis bases en desarrollo web full-stack. Me caracterizo 
+                    por mi disciplina para aprender nuevas tecnologías de 
+                    forma autónoma, construir proyectos prácticos y 
+                    comprender el ciclo de vida del desarrollo de software.
+                </p>
+            </section>
+
+            <section>
+                <h3>Formación</h3>
+                <ul>
+                    <li>
+                         Universidad Virtual
+                            Ingeniería en Desarrollo de Software | Jul 2025 – Actualidad
+                        Enfocado en la administración de proyectos y desarrollo frontend/backend.
+                    </li>
+                    <li>
+                         
+                        Cis 77
+                        Técnico en Programación | Sept 2017 – Jun 2020
+                        Fundamentos de lógica, desarrollo de aplicaciones Android básicas, bases de datos y maquetación web.
+                    </li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h3>Habilidades</h3>
+
+                <!-- Contenerdor -->
+                <div>
+                    <div>
+                        <h4>Frontend</h4>
+                        <ul>
+                            <li>React.js</li>
+                            <li>Html y CSS</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Backend & Base de Datos</h4>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>JavaScript</li>
+                            <li>MySQL / SQL</li>
+                            <li>API REST</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Despliegue & Herramientas</h4>
+                        <ul>
+                            <li>Railway</li>
+                            <li>Git/GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h4>Idiomas</h4>
+                <p>Ingles A2</p>
+            </section>
+
+        </div>
+    </main>
+           
 </body>
 </html>
