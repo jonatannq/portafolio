@@ -32,6 +32,9 @@ h1 {
     font-size: 2rem;
 }
 
+ul {
+    list-style: none;
+}
 
 
 @media (min-width: 768px) {
@@ -44,32 +47,30 @@ h1 {
         font-size: 2.5rem;
     }
 
-
 }
 
 
 .profile__card {
     background-color: rgb(83, 82, 160);
-    
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 15rem;
+    gap: 8rem;
 }
 
-
-
-
-
+@media (min-width: 768px) {
+    .profile__card { 
+        justify-content: space-between;
+    }
+}
 
 .profile__section {
-    /*width: min(90%, 30rem);
-    margin: 0 auto;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
+
 .profile__display {
     display: flex;
     flex-direction: column;
@@ -105,12 +106,20 @@ h1 {
 
 .contact__div {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
 
+@media (min-width: 768px) {
+    .contact__div {
+        flex-direction: row;
+    }
+}
+
 .contact__text--show {
     display: none;
+    
 }
 
 @media (min-width: 768px) {
@@ -119,15 +128,32 @@ h1 {
     }
     .contact__text--show {
         display: inline-block;
+        
     }
 }
 
-
+@media (min-width: 255px){
+    .contact__text--show {
+        display: inline-block;
+        
+    }
+    
+}
 
 
 
 /* Contenido */
 .profile__content {
     padding: 2rem 1.5rem;
-    overflow-y: scroll;
+}
+
+@media (min-width: 768px) {
+    .profile__content {
+        overflow-y: scroll;
+    }
+}
+
+
+.skill__icon {
+    width: 3rem;
 }
