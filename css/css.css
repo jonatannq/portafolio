@@ -1,6 +1,7 @@
 :root {
     --font: "Inter";
-
+    --black: rgb(15, 15, 15);
+    --color-card: rgb(168, 207, 58);
 }
 
 html {
@@ -34,6 +35,22 @@ h1 {
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 194px) {
+    ul {
+        padding-left: 3rem;
+        margin-top: 1rem;
+    }
+
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--black)
 }
 
 
@@ -51,7 +68,7 @@ ul {
 
 
 .profile__card {
-    background-color: rgb(83, 82, 160);
+    background-color: var(--color-card);
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
@@ -79,16 +96,11 @@ ul {
 }
 .profile__img {
     border-radius: 50%;
-    max-width: 90%;       
-    height: 10rem;
+    width: 13rem;       
+    height: 12rem;
 }
 
-@media (min-width: 194px) {
-    .profile__img {
-        width: 13rem;       
-        height: 12rem;
-    }
-}
+
 
 /* Mayor a 250 el mq */
 
@@ -109,6 +121,10 @@ ul {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    &:hover {
+        transform: scale(1.1);
+        color: rgb(58, 58, 58);
+    }
 }
 
 @media (min-width: 768px) {
@@ -122,12 +138,14 @@ ul {
     
 }
 
+
 @media (min-width: 768px) {
     .contact__section {
         align-items: start;
     }
     .contact__text--show {
         display: inline-block;
+        overflow-wrap: anywhere;
         
     }
 }
@@ -147,11 +165,26 @@ ul {
     padding: 2rem 1.5rem;
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 500px) {
+      
+    .content__skill {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1000px) {
     .profile__content {
         overflow-y: scroll;
     }
+    .content__skill {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
 }
+
+
 
 
 .skill__icon {
