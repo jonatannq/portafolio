@@ -19,6 +19,7 @@ body {
     margin: 0;
     font-size: 1.6rem;
     font-family: var(--font);
+
 }
 
 h1,
@@ -44,7 +45,6 @@ ul {
         padding-left: 3rem;
         margin-top: 1rem;
     }
-
 }
 
 
@@ -58,7 +58,7 @@ a {
     .main__display {
         display: grid;
         grid-template-columns: 30% 70%;
-        height: 100vh;
+        
     }
     h1 {
         font-size: 2.5rem;
@@ -73,6 +73,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 8rem;
+    
 }
 
 @media (min-width: 768px) {
@@ -100,9 +101,6 @@ a {
     height: 12rem;
 }
 
-
-
-/* Mayor a 250 el mq */
 
 .contact__icon {
     width: 3rem;
@@ -168,17 +166,15 @@ a {
 
 @media (min-width: 500px) {
       
-    .content__skill {
+    .content__skills {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1000px) {
-    .profile__content {
-        overflow-y: scroll;
-    }
-    .content__skill {
+    
+    .content__skills {
         grid-template-columns: repeat(3, 1fr);
 
     }
@@ -189,4 +185,40 @@ a {
 
 .skill__icon {
     width: 3rem;
+}
+.skill__display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+@media (min-width: 500px) {
+    .skill__display {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.skill__list {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.skill__text {
+    display: none;
+}
+
+@media (min-width: 500px) {
+    .skill__text {
+        display: block;
+    }
+
+    .skill__list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
