@@ -1,7 +1,7 @@
 :root {
     --font: "Inter";
-    --black: rgb(15, 15, 15);
-    --color-card: rgb(168, 207, 58);
+    --black: rgb(224, 217, 193);
+    --color-card: rgb(223, 69, 94);
 }
 
 html {
@@ -19,7 +19,6 @@ body {
     margin: 0;
     font-size: 1.6rem;
     font-family: var(--font);
-
 }
 
 h1,
@@ -31,7 +30,18 @@ p {
 }
 
 h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+h3 {
     font-size: 2rem;
+}
+h4 {
+    font-weight: 600;
+}
+
+strong {
+    font-weight: 500;
 }
 
 ul {
@@ -39,14 +49,6 @@ ul {
     padding: 0;
     margin: 0;
 }
-
-@media (min-width: 194px) {
-    ul {
-        padding-left: 3rem;
-        margin-top: 1rem;
-    }
-}
-
 
 a {
     text-decoration: none;
@@ -58,14 +60,12 @@ a {
     .main__display {
         display: grid;
         grid-template-columns: 30% 70%;
-        
+        height: 100vh;
     }
     h1 {
         font-size: 2.5rem;
     }
-
 }
-
 
 .profile__card {
     background-color: var(--color-card);
@@ -73,7 +73,6 @@ a {
     display: flex;
     flex-direction: column;
     gap: 8rem;
-    
 }
 
 @media (min-width: 768px) {
@@ -95,12 +94,12 @@ a {
     align-items: center;
     gap: 1rem;
 }
+
 .profile__img {
     border-radius: 50%;
     width: 13rem;       
     height: 12rem;
 }
-
 
 .contact__icon {
     width: 3rem;
@@ -113,12 +112,14 @@ a {
     gap: 1rem;
 }
 
-
 .contact__div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+}
+
+.contact__div--hover {
     &:hover {
         transform: scale(1.1);
         color: rgb(58, 58, 58);
@@ -133,9 +134,7 @@ a {
 
 .contact__text--show {
     display: none;
-    
 }
-
 
 @media (min-width: 768px) {
     .contact__section {
@@ -143,17 +142,14 @@ a {
     }
     .contact__text--show {
         display: inline-block;
-        overflow-wrap: anywhere;
-        
+        overflow-wrap: anywhere;  
     }
 }
 
 @media (min-width: 255px){
     .contact__text--show {
-        display: inline-block;
-        
+        display: inline-block;   
     }
-    
 }
 
 
@@ -161,11 +157,16 @@ a {
 /* Contenido */
 .profile__content {
     padding: 2rem 1.5rem;
+    
 }
 
+@media (min-width: 768px) {
+    .profile__content {
+        overflow-y: scroll;
+    }
+}
 
 @media (min-width: 500px) {
-      
     .content__skills {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -173,15 +174,20 @@ a {
 }
 
 @media (min-width: 1000px) {
-    
     .content__skills {
         grid-template-columns: repeat(3, 1fr);
-
     }
 }
 
+.content {
+    padding: 1rem;
+    margin: 0.4rem;
+}
 
-
+.content--no {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
 
 .skill__icon {
     width: 3rem;
@@ -192,20 +198,19 @@ a {
     align-items: center;
     gap: 1rem;
 }
+
 @media (min-width: 500px) {
     .skill__display {
         flex-direction: row;
         align-items: center;
-        gap: 1rem;
     }
 }
 
 .skill__list {
-    padding: 1.5rem;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.4rem;
 }
 
 .skill__text {
@@ -216,7 +221,6 @@ a {
     .skill__text {
         display: block;
     }
-
     .skill__list {
         flex-direction: row;
         justify-content: space-between;
